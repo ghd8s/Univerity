@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Locale;
 /**
  * 0 - 400.00            *  15%
  * 400.01 - 800.00       *  12%
@@ -11,6 +12,8 @@ import java.util.Scanner;
  */
 public class P1048 {
     public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
+
         var s = new Scanner(System.in);
         double sal = s.nextDouble();
         s.close();
@@ -31,3 +34,4 @@ public class P1048 {
     }
     
 }
+
